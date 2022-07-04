@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calcul mental.cpp" />
+    <ClCompile Include="Calcul mental.c" />
+    <ClCompile Include="calcul.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calcul.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

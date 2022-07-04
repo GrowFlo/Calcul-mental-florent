@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calcul mental.cpp">
+    <ClCompile Include="Calcul mental.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="calcul.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calcul.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
