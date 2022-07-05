@@ -1,5 +1,5 @@
 #pragma once
-float addition();
-float multiplication();
+int addition();
+int multiplication();
 float division();
-float soustraction();
+int soustraction();
