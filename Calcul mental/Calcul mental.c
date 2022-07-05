@@ -1,7 +1,7 @@
 /* Importation des éléments nécessaire à l'affichage graphique */
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "calcul.h"
 
 int main(int argc, char* argv[])
 {
@@ -21,6 +21,16 @@ int main(int argc, char* argv[])
         nombreb = rand() % 101;
         resultat = addition(nombrea, nombreb);
         printf("%d + %d = ", nombrea, nombreb);
+        scanf_s("%d", &valeurUtilisateur);
+        printf("\n");
+        if (valeurUtilisateur == resultat)
+        {
+            printf("La valeur saisie est correcte \n");
+        }
+        else
+        {
+            printf("La valeur est fausse");
+        }
     }
     return 0;
 }
