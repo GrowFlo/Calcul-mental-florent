@@ -10,7 +10,7 @@ float division(float nombrea, float nombreb)
 {
 	return nombrea/nombreb;
 }
-int soustraction(float nombrea, float nombreb)
+int soustraction(int nombrea, int nombreb)
 {
 	return nombrea - nombreb;
 }

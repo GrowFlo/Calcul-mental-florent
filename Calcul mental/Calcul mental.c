@@ -53,7 +53,20 @@ int main(int argc, char* argv[])
     }
     else if (choix == 3)
     {
-        printf("Vous avez choisit de faire une soustraction.\n");
+        nombrea = rand() % 101;
+        nombreb = rand() % 101;
+        resultat = soustraction(nombrea, nombreb);
+        printf("%d - %d = ", nombrea, nombreb);
+        scanf_s("%d", &valeurUtilisateur);
+        printf("\n");
+        if (valeurUtilisateur == resultat)
+        {
+            printf("La valeur saisie est correcte \n");
+        }
+        else
+        {
+            printf("La valeur est fausse");
+        }
     }
     else
     {
