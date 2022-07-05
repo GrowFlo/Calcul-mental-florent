@@ -1,6 +1,7 @@
 /* Importation des éléments nécessaire à l'affichage graphique */
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "calcul.h"
 
 int main(int argc, char* argv[])
@@ -19,6 +20,7 @@ int main(int argc, char* argv[])
     int nombreb = 0;
     int valeurUtilisateur = 0;
     int compteur = 0;
+    time_t begin, end;
     switch (choix)
     {
     case 1:
@@ -34,6 +36,7 @@ int main(int argc, char* argv[])
         printf("Erreur saisie incorrecte");
         break;
     }
+    time(&begin);
     while (compteur < nombreCalcul)
     {
         if (choix == 1)
@@ -90,5 +93,8 @@ int main(int argc, char* argv[])
 
         compteur++;
     }
+    time(&end);
+    time_t tempsEcoule = end - begin;
+    printf("Le temps ecoule est de %ld secondes.", tempsEcoule);
     return 0;
 }
