@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
     printf("Bienvenue au jeu de calcul mental :\n");
     printf("Choisisser le type de calcul que vous voulez :\n");
-    printf("Addition: 1 / Multiplication: 2 / Division 3 / Soustraction 4 : ");
+    printf("Addition: 1 / Multiplication: 2 / Soustraction 3 : ");
     int choix;
     scanf_s("%d", &choix);
     int resultat;
@@ -31,6 +31,18 @@ int main(int argc, char* argv[])
         {
             printf("La valeur est fausse");
         }
+    }
+    else if (choix == 2)
+    {
+        printf("Vous avez choisit de faire une multiplication.\n");
+    }
+    else if (choix == 3)
+    {
+        printf("Vous avez choisit de faire une soustraction.\n");
+    }
+    else
+    {
+        printf("Le choix saisi n'est pas disponible");
     }
     return 0;
 }
