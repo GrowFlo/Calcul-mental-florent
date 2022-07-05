@@ -2,7 +2,7 @@ int addition(int nombrea, int nombreb)
 {
 	return nombrea + nombreb;
 }
-int multiplication(float nombrea, float nombreb)
+int multiplication(int nombrea, int nombreb)
 {
 	return nombrea * nombreb;
 }
